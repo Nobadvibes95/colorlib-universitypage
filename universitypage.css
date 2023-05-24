@@ -1,0 +1,309 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.mother-div{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./timi.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* .mother-div::after{
+  content: " " ;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  z-index: 0;
+} */
+ 
+.navlogo{
+  background: transparent;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6%;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li{
+  margin-left: 2rem;
+}
+
+.university-content{
+ display: flex;
+ justify-content: center; 
+ height: 58vh;
+ width: 100%;
+ align-items: center;
+ flex-direction: column;
+}
+
+.subuni-content{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 41rem;
+}
+
+button{
+  background: transparent;
+  padding: 1rem 3rem;
+  color: white;
+  border: 2px solid white;
+  margin-top: 5rem;
+}
+
+.log-out{
+  border: 1px solid white;
+  border-radius: 0.1rem;
+  padding: 8px 5px;
+}
+
+.log-out:hover{
+  background-color: red;
+}
+
+
+button:hover{
+  background-color: red;
+}
+.second-page{
+  height: 100vh;
+  width: 100%;
+}
+
+
+.camp-bell{
+  display: flex; 
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.navig{
+  color: white;
+}
+
+.course{
+  margin: 4rem 4rem 1rem 4rem;
+  text-align: center;
+}
+
+.c-offer{
+  font-size: 30px;
+}
+
+
+.world1{
+  font-size: 3rem; 
+  font-weight: 5rem;
+   color: white;
+}
+
+.content1{
+  color: white; 
+  font-size: 12px;
+}
+
+.trinity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 5rem;
+  
+}
+
+.first-card{
+  background-color: pink;
+  padding: 2rem 5rem;
+  width: 23%;
+  text-align: center;
+  padding: 5rem 3rem;
+  border-radius: 10px;
+}
+
+.first-card:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.third-page{
+  height: 100vh;
+  width: 100%;
+}
+
+.header{
+  text-align: center;
+  font-size: 13px;
+  color: blue;
+  margin-bottom: 6px;
+  font-weight: 5px;
+}
+
+.after-header{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 40px;
+  margin-top: 2px;
+}
+
+.trio-pic{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.picture-wrap{
+  width: 18rem;
+  height: 20rem;
+  background-image: url(./Images/a1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+}
+
+.picture-info{
+  background-color: pink;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.fourth-page{
+  height: 90vh;
+  width: 100%;
+}
+
+.Name-Email{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.bosscontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:   30rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.place-color{
+  background-color: aqua;
+  padding-left: 1rem; 
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 1px;
+  height: 32px;
+  width: 300px;
+}
+
+.place-color2{
+  background-color: aqua;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 1px;
+  height: 32px;
+  width: 300px;
+}
+
+.place-color3{
+  background-color: aqua;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 1px;
+  height: 32px;
+  width: 495px;
+}
+
+.place-color4{
+  border: none;
+  border-radius: 1px;
+  width: 495px;
+  background-color: aqua;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+
+/* Responsive design for webpage  */
+@media (max-width:600px)
+{
+  .camp-bell{
+    font-size: 1rem;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .world1{
+    font-size: 1rem ;
+  }
+
+  .content1{
+    font-size: 10px;
+  }
+
+  .subuni-content{
+    width: 17rem;
+  }
+
+  button{
+    margin-top: 3rem;
+    border: 0.5px solid white;
+    padding: 1rem 2rem;
+  }
+  .university-content{
+    height: 70vh;
+  }
+
+  .c-offer{
+    font-size: 20px;
+  }
+  .b-offer{
+    font-size: 12px;
+}
+  
+  .trinity{
+    flex-direction: column;
+    display: flex;
+    /* align-items: center; */
+    padding: 3rem 3rem;
+    justify-content: space-around;
+ }
+
+ .first-card{
+  width: 58%;
+  margin-bottom: 3rem;
+  padding: 3rem 3rem;
+
+ }
+}

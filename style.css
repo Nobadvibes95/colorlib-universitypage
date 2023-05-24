@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.mother-div{
+    height: 100vh;
+    width: 100%;
+    background: url("./Images/Korea.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mother-div::after{
+    content: " " ;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.8;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-div{
+    z-index: 2;
+    height: 31rem;
+    width: 26rem;
+    border-radius: 7px;
+    padding: 3rem 2rem 3rem 2rem;
+    background: #9152f8;
+    background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+    background: -o-linear-gradient(top, #7579ff, #b224ef);
+    background: -moz-linear-gradient(top, #7579ff, #b224ef);
+    background: linear-gradient(top, #7579ff, #b224ef);
+}
+
+.sub-div:hover{
+    background: -webkit-linear-gradient(top, rgb(117 255 181), rgb(239 205 36));
+    transition: 10s;
+}
+
+.header-div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-div{
+    background-color: white;
+    border: 0.1px solid white;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    /* background: url("downloads/login"); */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: 5s;
+}
+
+.header-div:hover{
+    /* transform: scale(1.5); */
+    transform: rotate(30deg);
+    transition: 5s;
+}
+.log-div{
+    margin-top: 1rem;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
+}
+
+.log-div:hover{
+    transform: translate(15px,15px);
+    transition: 5s;
+    
+}
+
+.user-div{
+    margin-top: 0.5rem ;
+    height: 0.1px;
+    width: 100%;
+    border-radius: 5px;
+    opacity: 0.4;
+}
+
+.psw-div{
+    margin-top: 0.5rem ;
+    height: 0.1px;
+    width: 100%;
+    border-radius: 5px;
+    opacity: 0.4;
+}
+
+input{
+    margin-left: 1rem;
+    margin-top:2rem ;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+button{
+    margin-top: 2rem; 
+    background-color: white;
+    font-size: 17px;
+    border: none;
+    padding:1rem 2.5rem;
+    border-radius: 50px;
+
+}
+
+.sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in:hover{
+    /* transform: scale(1.5); */
+    transform: skew(2deg,2deg);
+}
+
+.fps{
+    margin-top: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background-color: blueviolet;
+    background: #9152f8;
+    background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+    background: -o-linear-gradient(top, #7579ff, #b224ef);
+    background: -moz-linear-gradient(top, #7579ff, #b224ef);
+    background: linear-gradient(top, #7579ff, #b224ef);
+    border: none;
+    outline: none;
+}
+
+    #rme{
+        margin-left: 0;
+        width: 1rem;
+    }
+
+    ::placeholder{
+        color:#ffff
+    }
+
+    .confam{
+        margin-top: 2rem; 
+        background-color: white;
+        font-size: 17px;
+        border: none;
+        padding:1rem 2.5rem;
+        border-radius: 50px;  
+        text-decoration: none;
+    }
+
+    /* Responsive webpage */
+    @media (max-width:600px){
+        .sub-div{
+            width: 17rem;
+            height: 25rem;
+        }
+
+        .log-div{
+            font-size: 15px;
+        }
+
+        button{
+            margin-top: 2.5rem;
+            font-size: 10px;
+            padding: 0.5rem 1rem;
+        }
+
+        .fps{
+            margin-top: 4rem;
+            font-size: 10px;
+        }
+
+        .remember{
+            font-size: 10px;
+            height: 5px;
+        }
+
+        input{
+            font-size: 10px;
+        }
+
+
+        img{
+            height: 6rem;
+            width: 6rem;
+        }
+
+        .header-div{
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+     
